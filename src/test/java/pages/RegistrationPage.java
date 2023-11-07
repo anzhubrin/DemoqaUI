@@ -11,11 +11,11 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class RegistrationPage {
-    private CalendarComponent calendarComponent = new CalendarComponent();
-    private RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
+    private final CalendarComponent calendarComponent = new CalendarComponent();
+    private final RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
 
     private final String titleText = "Student Registration Form";
-    private SelenideElement firstNameInput = $("#firstName"),
+    private final SelenideElement firstNameInput = $("#firstName"),
                             lastNameInput = $("#lastName"),
                             emailInput = $("#userEmail"),
                             genderInput = $("#genterWrapper"),
