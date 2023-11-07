@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
+import pages.RegistrationPage;
 import pages.components.TestData;
 
 public class RegistrationWithPageObjectsTests extends TestBase {
@@ -9,6 +10,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
     void successfulRegistrationTest() {
 
         TestData data = new TestData();
+        RegistrationPage registrationPage = new RegistrationPage();
 
         registrationPage.openPage()
                         .setFirstName(data.firstNameData)
